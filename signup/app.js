@@ -13,12 +13,12 @@ const signupHandler = () => {
     console.log(users, "-====>>> users")
     
     //checking fields
-    if (!userName.value || !email.value || !password.value || !cPassword.value) return alert('Saari fields likh bhai')
+    if (!userName.value || !email.value || !password.value || !cPassword.value) return alert('Fields remaining, Complete All Fields.')
     //checking length
 
     if (password.value.length < 8) return alert('password length should be atleast 8 characters')
     //checking password and cPassword
-    if (password.value != cPassword.value) return alert('same password confirm password likh bhai')
+    if (password.value != cPassword.value) return alert('Password is not Match')
 
     const userNameFound = users.find((user)=> {
         if(user.userName === userName.value) return user
@@ -49,7 +49,7 @@ const signupHandler = () => {
 
 
 
-    alert("Signup Successfully, now you can login, diverting you to the login page")
+    alert("Signup Successfully, now you can login, diverting you to the login page.")
     setTimeout(() => {
         window.location.href = '../login/index.html'
     }, 2000)
