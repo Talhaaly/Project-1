@@ -1,3 +1,45 @@
 input {
     width: 100%;
+    padding: 5px;
 }
+
+body {
+    background-image: linear-gradient(rgb(167, 147, 167), rgb(173, 173, 228), grey);
+}
+
+
+
+.container {
+    margin-top: 100px;
+}
+
+
+#input-control {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: 500px;
+    margin: 5px auto;
+    background-color: transparent;
+    /* border: 3px solid black; */
+    border-radius: 20px;
+    padding: 35px;
+    align-items: center;
+}
+
+#login-button {
+    margin-top: 10px;
+    width: 120px;
+    padding: 5px;
+}
+
+#click-here  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    }
+    
+    #click-here  a:hover {
+        color: purple;
+        font-size: x-large;
+    }
