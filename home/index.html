@@ -11,11 +11,12 @@
 
 </head>
 
-<body>
+<body style="background-color: rgb(223, 223, 223);">
     <!-- Navbar  -->
+    <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Social Media</a>
+            <a class="navbar-brand" href="#">Profile-Mania</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,19 +27,19 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../profile/index.html">My Profile</a>
+                        <a class="nav-link" href="../profile/index.html">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Settings</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle"
+                        <button style="background-color: transparent; border: none;" class="btn btn-secondary dropdown-toggle"
                             style="border-radius: 50%; width: 70px; height: 70px;" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img id="profilePicture"
-                                src="http://a-tacinc.com/wp-content/uploads/2017/07/stock-photo-64330069-businessman-icon-as-avatar-or-default-profile-picture.jpg"
+                            <img id="profilePicture" style="border-radius: 50%; height: 65px; width: 65px;"
+                                src="https://cdn-icons-png.flaticon.com/512/2919/2919906.png"
                                 alt="">
                         </button>
                         <ul class="dropdown-menu">
@@ -54,11 +55,12 @@
     </nav>
 
     <!-- content -->
+    <br>
     <div style="display: flex; justify-content: center;">
         <div>
-            <input id="postInput" type="text" placeholder="write what is your mind">
-            <button onclick="imageOpenerHandler()">image</button>
-            <button id="submitBtn" onclick="postSubmitHandler()">Submit</button>
+            <input style="width: 300px; padding: 5px;  background-color: transparent;" id="postInput" type="text" placeholder="write a post...">
+            <button style="padding: 5px; background: transparent; border-radius: 5px;" onclick="imageOpenerHandler()">image</button>
+            <button style="padding: 5px; background: transparent; border-radius: 5px;" id="submitBtn" onclick="postSubmitHandler()">Submit</button>
         </div>
     </div>
 
@@ -87,6 +89,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>

@@ -52,11 +52,11 @@ const postDisplayHandler = () => {
                    ${loggedInUser.email === post?.userDetail.email ? `<button onclick="editHandler(${post?.id})">Edit</button> ${post?.userDetail.userName} <button onclick="deleteHandler(${post?.id})">Delete</button>` : `${post?.userDetail.userName}`} 
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Special Post</h5>
+                    <h5 class="card-title">Mania Post</h5>
                     <p class="card-text">${post?.textData}.</p>
                 </div>
                 <div class="card-footer text-body-secondary">
-                    2 days ago
+                    2 minutes ago
                 </div>
             </div>
                 `
